@@ -1,0 +1,15 @@
+{
+    "id": "{94C631A6-72D5-DA7F-943D-22B43CD9EC37}",
+    "name": "AhoyDTU_Instance",
+    "type": 3,
+    "vendor": "",
+    "aliases":
+    [
+        "AhoyDTU"        
+    ],
+    "url": "",
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "AhoyDTU"
+}
