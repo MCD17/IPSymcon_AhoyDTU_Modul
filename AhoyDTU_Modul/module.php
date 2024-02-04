@@ -12,7 +12,7 @@
         public function ApplyChanges() {
             // Diese Zeile nicht löschen
             parent::ApplyChanges();
-            $this->SetValueString("mqtt_main_topic", "Hallo Welt!");
+            $this->SetValue("mqtt_main_topic", "Hallo Welt!");
         }
         /**
         * Die folgenden Funktionen stehen automatisch zur Verfügung, wenn das Modul über die "Module Control" eingefügt wurden.
