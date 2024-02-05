@@ -1,0 +1,53 @@
+{
+    "elements": [
+        {
+            "type": "ValidationTextBox",
+            "name": "BaseTopic",
+            "caption": "OpenDTU MQTT Base Topic"
+        },
+        {
+            "type": "List",
+            "name": "Variables",
+            "caption": "Variables",
+            "rowCount": 10,
+            "add": false,
+            "delete": false,
+            "loadValuesFromConfiguration": false,
+            "columns": [{
+                "caption": "Ident",
+                "name": "Ident",
+                "save": true,
+                "width": "0px",
+                "visible": false
+            }, {
+                "caption": "Position",
+                "name": "Position",
+                "save": false,
+                "width": "100px",
+                "visible": true
+            },{
+                "caption": "Name",
+                "name": "Name",
+                "width": "500px",
+                "save": false,
+                "visible": true
+            }, {
+                "caption": "Active",
+                "name": "Active",
+                "save": true,
+                "width": "75px",
+                "visible": true,
+                "edit": {
+                    "type": "CheckBox"
+                }
+            }],
+            "values": []
+        }     
+    ],
+    "actions": [
+        {
+            "type": "TestCenter"
+        }
+    ],
+    "status": []
+}

@@ -9,7 +9,7 @@ declare(strict_types=1);
 			//Never delete this line!
 			parent::Create();		
 
-			$this->RegisterPropertyString('BaseTopic', 'solar/');
+			$this->RegisterPropertyString('BaseTopic', 'ahoyDTU/');
             $this->RegisterPropertyString('Variables', '[]');
 
 			$this->RegisterProfile(2, static::PREFIX.".Wh", "Electricity", "", " Wh", 0, 0, 0, 1);
