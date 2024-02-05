@@ -3,13 +3,15 @@
     "name": "AhoyDTU_Instance",
     "type": 3,
     "vendor": "",
-    "aliases":
-    [
-        "AhoyDTU"        
-    ],
+    "aliases": ["Hoymiles Microinverter with AhoyDTU"],      
     "url": "",
-    "parentRequirements": [],
+    "parentRequirements": [
+        "{6F642E77-958C-6C58-2101-F142FD7836DA}"
+    ],
     "childRequirements": [],
-    "implemented": [],
+    "implemented": [
+        "{69CDBA93-CAE6-A38E-A3F1-0D779C1A1047}",
+        "{7F7632D9-FA40-4F38-8DEA-C83CD4325A32}"
+    ],
     "prefix": "AhoyDTU"
 }
