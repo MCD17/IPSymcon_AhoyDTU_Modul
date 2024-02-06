@@ -7,14 +7,13 @@ declare(strict_types=1);
 		public function Create()
 		{
 			//Never delete this line!
-			parent::Create();		
+			parent::Create();			
 
-			$this->RegisterPropertyString('BaseTopic', 'ahoyDTU/');
+			$this->RegisterPropertyString('MQTTBaseTopic', 'ahoyDTU/');
             $this->RegisterPropertyString('Variables', '[]');
 
 			$this->RegisterProfile(2, static::PREFIX.".Wh", "Electricity", "", " Wh", 0, 0, 0, 1);
-			$this->RegisterProfile(2, static::PREFIX.".VAr", "Electricity", "", " VAr", 0, 0, 0, 1);
-			
+			$this->RegisterProfile(2, static::PREFIX.".VAr", "Electricity", "", " VAr", 0, 0, 0, 1);			
 		}
 
 		public function Destroy()
@@ -28,14 +27,14 @@ declare(strict_types=1);
 			//Never delete this line!
 			parent::ApplyChanges();
 
-
-			$this->ConnectParent('{40505457-AB2C-057B-C9D7-657EBB53A528}');
+			$this->ConnectParent('{C6D2AEB3-6E1F-4B2E-8E69-3A1A00246850}');		
 
 			//Setze Filter für ReceiveData
-			$baseTopic = $this->ReadPropertyString('BaseTopic');
+			$MQTTBaseTopic = $this->ReadPropertyString('MQTTBaseTopic');
+			$filter = '.*(' . preg_quote($MQTTTopic) . ').*';
+			$this->SetReceiveDataFilter($filter);			
 
-			$filter = '.*(' . preg_quote($baseTopic) . ').*';
-			$this->SetReceiveDataFilter($filter);
+
 			$this->LogMessage('Filter: '.$filter, KL_MESSAGE);
 
 			// Get Variable list
