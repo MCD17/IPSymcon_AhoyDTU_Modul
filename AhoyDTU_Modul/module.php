@@ -59,30 +59,18 @@ declare(strict_types=1);
 
 			$variables = json_decode( $this->ReadPropertyString("Variables"), true);
 
-			$Serial = $this->ReadPropertyString('Serial');
+			$MQTTBaseTopic = $this->ReadPropertyString('MQTTBaseTopic');
 
 			$payload= utf8_decode($data->Payload);
-			$topic = $data->Topic;
-			$inverterTopic = $Serial.'/';
+			$dataTopic = $data->Topic;
+			$MQTTBaseTopic = $MQTTBaseTopic.'/';
 
+			$this->SendDebug("BaseTopic:", $MQTTBaseTopic , 0);
+			$this->SendDebug("DataTopic:", $MQTTBaseTopic , 0);
 
-			if ( @$this->GetIDForIdent('dtu_status') ) 
+			if ( strpos( $dataTopic, $MQTTBaseTopic) === 0)
 			{
-
-				if ( strpos( $topic, 'dtu/status' ) === 0 && $payload == "offline")
-				{
-					$this->SetValue( 'dtu_status', false);
-
-					return;
-				}	
-
-				$this->SetValue( 'dtu_status', true);
-			}
-
-
-			if ( strpos( $topic, $inverterTopic) === 0)
-			{
-				$subTopic = str_replace( $inverterTopic, '', $topic);
+				$subTopic = str_replace( $MQTTBaseTopic, '', $dataTopic);
 				$ident = str_replace( '/', '_', $subTopic);
 
 				if ( @$this->GetIDForIdent($ident) ) 
@@ -148,7 +136,7 @@ declare(strict_types=1);
 		private function GetVariablesList()
 		{
 	
-			$file = __DIR__ . "/../libs/variables_microinverter.json";
+			$file = __DIR__ . "/../libs/variables_ahoydtu.json";
 			if (is_file($file))
 			{
 				$data = json_decode(file_get_contents($file), true);
