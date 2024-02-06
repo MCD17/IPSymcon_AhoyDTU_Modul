@@ -2,8 +2,8 @@
     "elements": [
         {
             "type": "ValidationTextBox",
-            "name": "BaseTopic",
-            "caption": "OpenDTU MQTT Base Topic"
+            "name": "MQTTBaseTopic",
+            "caption": "MQTT Topic of inverter in AhoyDTU"
         },
         {
             "type": "List",
