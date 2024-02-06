@@ -40,6 +40,22 @@
         "Active": true
     },
     {
+        "Ident": "sunrise",
+        "Name": "Sonnenaufgang",
+        "VariableType": 1,
+        "VariableProfile": "~UnixTimestamp",
+        "Position": 6,
+        "Active": true
+    },
+    {
+        "Ident": "sunset",
+        "Name": "Sonnenuntergang",
+        "VariableType": 1,
+        "VariableProfile": "~UnixTimestamp",
+        "Position": 7,
+        "Active": true
+    },
+    {
         "Ident": "total_P_AC",
         "Name": "AC Power",
         "VariableType": 2,
@@ -51,7 +67,7 @@
         "Ident": "total_YieldDay",
         "Name": "AC Energy today",
         "VariableType": 2,
-        "VariableProfile": "OPENDTU.Wh",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 11,
         "Active": true
     },
@@ -66,7 +82,7 @@
     {
         "Ident": "version",
         "Name": "AhoyDTU Firmware Version",
-        "VariableType": 1,
+        "VariableType": 3,
         "VariableProfile": "",
         "Position": 13,
         "Active": true
