@@ -1,6 +1,6 @@
 [
     {
-        "Ident": "ip",
+        "Ident": "ip_addr",
         "Name": "IP address",
         "VariableType": 3,
         "VariableProfile": "",
@@ -8,7 +8,7 @@
         "Active": true
     },
     {
-        "Ident": "hostname",
+        "Ident": "device",
         "Name": "Hostname",
         "VariableType": 3,
         "VariableProfile": "",
@@ -16,8 +16,8 @@
         "Active": true
     },
     {
-        "Ident": "rssi",
-        "Name": "RSSI",
+        "Ident": "wifi_rssi",
+        "Name": "Wifi Verbindungsqualität - RSSI",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 3,
@@ -40,7 +40,7 @@
         "Active": true
     },
     {
-        "Ident": "ac_power",
+        "Ident": "total_P_AC",
         "Name": "AC Power",
         "VariableType": 2,
         "VariableProfile": "~Watt.3680",
@@ -48,7 +48,7 @@
         "Active": true
     },
     {
-        "Ident": "ac_yieldday",
+        "Ident": "total_YieldDay",
         "Name": "AC Energy today",
         "VariableType": 2,
         "VariableProfile": "OPENDTU.Wh",
@@ -56,7 +56,7 @@
         "Active": true
     },
     {
-        "Ident": "ac_yieldtotal",
+        "Ident": "total_YieldTotal",
         "Name": "AC Energy total",
         "VariableType": 2,
         "VariableProfile": "~Electricity",
@@ -64,35 +64,11 @@
         "Active": true
     },
     {
-        "Ident": "ac_is_valid",
-        "Name": "AC values are valid (all inverters reachable)",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "Ident": "version",
+        "Name": "AhoyDTU Firmware Version",
+        "VariableType": 1,
+        "VariableProfile": "",
         "Position": 13,
-        "Active": true
-    },
-    {
-        "Ident": "dc_power",
-        "Name": "DC Power",
-        "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
-        "Position": 20,
-        "Active": true
-    },
-    {
-        "Ident": "dc_irradiation",
-        "Name": "DC Irradiation",
-        "VariableType": 2,
-        "VariableProfile": "~Valve.F",
-        "Position": 21,
-        "Active": true
-    },
-    {
-        "Ident": "dc_is_valid",
-        "Name": "DC values are valid (all inverters reachable)",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
-        "Position": 22,
         "Active": true
     }
 ]
