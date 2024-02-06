@@ -31,7 +31,7 @@ declare(strict_types=1);
 
 			//Setze Filter für ReceiveData
 			$MQTTBaseTopic = $this->ReadPropertyString('MQTTBaseTopic');
-			$filter = '.*(' . preg_quote($MQTTTopic) . ').*';
+			$filter = '.*(' . preg_quote($MQTTBaseTopic) . ').*';
 			$this->SetReceiveDataFilter($filter);			
 
 
