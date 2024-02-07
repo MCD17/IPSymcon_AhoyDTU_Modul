@@ -1,5 +1,5 @@
 <?php
-	class AhoyDTU_Instance extends IPSModule
+	class AhoyDTU_device extends IPSModule
 	{
 		const PREFIX = "AHOY_DTU";
 		public function Create()

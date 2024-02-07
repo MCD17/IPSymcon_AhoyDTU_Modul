@@ -27,13 +27,9 @@
 			//Set Filter for ReceiveData
 			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
 			$filter = '.*(' . preg_quote($baseTopic) . ').*';
-			$this->SetReceiveDataFilter($filter);			
+			$this->SetReceiveDataFilter($filter);
 
-
-			$this->LogMessage('Filter: '.$filter, KL_MESSAGE);
-
-			//Create variables from configuration file
-			$variables = $this->CreateVariablesFromConfigurationFile(__DIR__ . "/../libs/variables_ahoydtu.json");
+			$this->SendDebug('ApplyChanges: setFilter: '.$filter, 0);
 		}
 
 		public function RequestAction($Ident, $Value) 

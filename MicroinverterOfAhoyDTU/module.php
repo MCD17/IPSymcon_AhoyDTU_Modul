@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 
-	class MicroinverterOfAhoyDTU extends genericMQTT_IPS_module
+	class MicroinverterAhoyDTU extends genericMQTT_IPS_module
 	{
 		const PREFIX = "AHOY_DTU";
 		public function Create()
