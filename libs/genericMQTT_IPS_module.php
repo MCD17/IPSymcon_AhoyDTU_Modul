@@ -56,9 +56,9 @@
 			$dataTopic = $data->Topic;
 			$baseTopic = $baseTopic.'/';	
 
-			if ( strpos( $dataTopic, $BaseTopic) === 0)
+			if ( strpos( $dataTopic, $baseTopic) === 0)
 			{
-				$subTopic = str_replace( $BaseTopic, '', $dataTopic);
+				$subTopic = str_replace($baseTopic, '', $dataTopic);
 				$ident = str_replace( '/', '_', $subTopic);
 
 				if ( @$this->GetIDForIdent($ident)) 
