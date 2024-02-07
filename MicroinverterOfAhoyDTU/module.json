@@ -1,9 +1,9 @@
 {
-    "id": "{94C631A6-72D5-DA7F-943D-22B43CD9EC37}",
-    "name": "AhoyDTU_Device",
+    "id": "{2C8394FD-6965-ED19-03D7-EAFEB20860FE}",
+    "name": "MicroinverterOfAhoyDTU",
     "type": 3,
     "vendor": "",
-    "aliases": ["AhoyDTU Device"],      
+    "aliases": ["Microinverter AhoyDTU"],      
     "url": "",
     "parentRequirements": [
         "{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}"

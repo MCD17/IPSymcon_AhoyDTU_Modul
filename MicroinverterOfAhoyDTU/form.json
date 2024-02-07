@@ -3,7 +3,7 @@
         {
             "type": "ValidationTextBox",
             "name": "MQTTBaseTopic",
-            "caption": "MQTT Topic of inverter in AhoyDTU"
+            "caption": "MQTT Topic of Hoymiles microinverter in AhoyDTU"
         },
         {
             "type": "List",

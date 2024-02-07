@@ -45,7 +45,7 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 6,
-        "Active": true
+        "Active": false
     },
     {
         "Ident": "sunset",
@@ -53,7 +53,23 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 7,
-        "Active": true
+        "Active": false
+    },
+    {
+        "Ident": "comm_start",
+        "Name": "Communication start time",
+        "VariableType": 1,
+        "VariableProfile": "~UnixTimestamp",
+        "Position": 8,
+        "Active": false
+    },
+    {
+        "Ident": "comm_stop",
+        "Name": "Communication stop time",
+        "VariableType": 1,
+        "VariableProfile": "~UnixTimestamp",
+        "Position": 9,
+        "Active": false
     },
     {
         "Ident": "total_P_AC",
@@ -86,5 +102,38 @@
         "VariableProfile": "",
         "Position": 13,
         "Active": true
+    },
+    {
+        "Ident": "dis_night_comm",
+        "Name": "does communication stop at night",
+        "VariableType": 0,
+        "VariableProfile": "~Switch",
+        "Position": 14,
+        "Active": false
+    },
+    {
+        "Ident": "free_hep",
+        "Name": "Free heap memory",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 15,
+        "Active": false
+    },
+    {
+        "Ident": "mqtt",
+        "Name": "Is mqtt connected",
+        "VariableType": 0,
+        "VariableProfile": "~Switch",
+        "Position": 16,
+        "Active": false
+    },
+    {
+        "Ident": "status",
+        "Name": "Status",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 17,
+        "Active": false
     }
+
 ]

@@ -1,17 +1,13 @@
 <?php
-	class AhoyDTU_Instance extends IPSModule
+	class genericMQTT_IPS_module extends IPSModule
 	{
-		const PREFIX = "AHOY_DTU";
 		public function Create()
 		{
 			//Never delete this line!
 			parent::Create();			
 
-			$this->RegisterPropertyString('MQTTBaseTopic', 'ahoyDTU/');
-            $this->RegisterPropertyString('Variables', '[]');
-
-			$this->RegisterProfile(2, static::PREFIX.".Wh", "Electricity", "", " Wh", 0, 0, 0, 1);
-			$this->RegisterProfile(2, static::PREFIX.".VAr", "Electricity", "", " VAr", 0, 0, 0, 1);			
+			$this->RegisterPropertyString('MQTTBaseTopic', 'please set a base topic');
+            $this->RegisterPropertyString('Variables', '[]');		
 		}
 
 		public function Destroy()
