@@ -1,78 +1,78 @@
 [
     {
-        "Ident": "status_limit_relative",
-        "Name": "Power limit relative [%]",
+        "Ident": "ch0_available",
+        "Name": "availability stats",
         "VariableType": 1,
-        "VariableProfile": "~Intensity.100",
+        "VariableProfile": "",
         "Position": 1,
         "Active": true
     },
     {
-        "Ident": "status_limit_absolute",
-        "Name": "Power limit absolute [W]",
+        "Ident": "ch0_last_success",
+        "Name": "last connection time",
         "VariableType": 1,
-        "VariableProfile": "",
+        "VariableProfile": "~UnixTimestamp",
         "Position": 2,
         "Active": true
     },
     {
-        "Ident": "status_producing",
-        "Name": "Inverter is producing",
+        "Ident": "ch0_ack_pwr_limit",
+        "Name": "power limit accepted",
         "VariableType": 0,
         "VariableProfile": "~Switch",
         "Position": 3,
-        "Active": true
+        "Active": false
     },
     {
-        "Ident": "status_reachable",
-        "Name": "Inverter is reachable",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "Ident": "ch0_U_AC",
+        "Name": "actual AC Voltage",
+        "VariableType": 2,
+        "VariableProfile": "~Volt.230",
         "Position": 4,
         "Active": true
     },
     {
-        "Ident": "status_last_update",
-        "Name": "Last inverter statistics udpate",
-        "VariableType": 1,
-        "VariableProfile": "~UnixTimestampTime",
+        "Ident": "ch0_I_AC",
+        "Name": "actual AC Current",
+        "VariableType": 2,
+        "VariableProfile": "~Ampere.16",
         "Position": 5,
         "Active": true
     },
     {
-        "Ident": "dtu_status",
-        "Name": "OpenDTU online status",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "Ident": "ch0_P_AC",
+        "Name": "actual AC Power",
+        "VariableType": 2,
+        "VariableProfile": "~Watt",
         "Position": 6,
         "Active": true
     },
     {
-        "Ident": "0_power",
-        "Name": "Power AC",
+        "Ident": "ch0_Q_AC",
+        "Name": "actual AC reactive power in var",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "",
         "Position": 10,
         "Active": true
     },
     {
-        "Ident": "0_powerdc",
-        "Name": "Power DC",
+        "Ident": "ch0_F_AC",
+        "Name": "actual AC Frequency",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "~Hertz",
         "Position": 11,
         "Active": true
     },
     {
-        "Ident": "0_current",
-        "Name": "Current",
+        "Ident": "ch0_PF_AC",
+        "Name": "actual AC Power factor",
         "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
+        "VariableProfile": "",
         "Position": 12,
         "Active": true
     },
     {
-        "Ident": "0_voltage",
+        "Ident": "ch0_Temp",
         "Name": "Voltage",
         "VariableType": 2,
         "VariableProfile": "~Volt.230",
@@ -80,347 +80,293 @@
         "Active": true
     },
     {
-        "Ident": "0_reactivepower",
-        "Name": "Reactive power",
+        "Ident": "ch0_0_reactivepower",
+        "Name": "Temperature of inverter",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.VAr",
+        "VariableProfile": "~Temperature",
         "Position": 14,
         "Active": true
     },
     {
-        "Ident": "0_powerfactor",
-        "Name": "Powerfactor",
-        "VariableType": 2,
+        "Ident": "ch0_EVT",
+        "Name": "Last Event/Alarm Message Index",
+        "VariableType": 1,
         "VariableProfile": "",
         "Position": 15,
         "Active": true
     },
     {
-        "Ident": "0_frequency",
-        "Name": "Frequency",
+        "Ident": "ch0_YieldDay",
+        "Name": "Inverter Energy today",
         "VariableType": 2,
-        "VariableProfile": "~Hertz.50",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 16,
         "Active": true
     },
     {
-        "Ident": "0_efficiency",
-        "Name": "Efficiency",
+        "Ident": "ch0_YieldTotal",
+        "Name": "Inverter Energy total",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 17,
         "Active": true
     },
     {
-        "Ident": "0_temperature",
-        "Name": "Inverter temperature",
+        "Ident": "ch0_P_DC",
+        "Name": "actual DC power",
         "VariableType": 2,
-        "VariableProfile": "~Temperature",
+        "VariableProfile": "~Watt",
         "Position": 18,
         "Active": true
     },
     {
-        "Ident": "0_yieldday",
-        "Name": "Energy today",
+        "Ident": "ch0_Efficiency",
+        "Name": "power conversion efficiency",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
+        "VariableProfile": "",
         "Position": 19,
         "Active": true
     },
     {
-        "Ident": "0_yieldtotal",
-        "Name": "Energy total",
-        "VariableType": 2,
-        "VariableProfile": "~Electricity",
+        "Ident": "ch0_FWVersion",
+        "Name": "Firmware version",
+        "VariableType": 3,
+        "VariableProfile": "",
         "Position": 20,
         "Active": true
     },
     {
-        "Ident": "1_power",
-        "Name": "String 1 Power",
+        "Ident": "ch0_FWBuildYear",
+        "Name": "Firmware build year",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 21,
+        "Active": true
+    },
+    {
+        "Ident": "ch0_FWBuildMonthDay",
+        "Name": "Firmware build day and month",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 22,
+        "Active": true
+    },
+    {
+        "Ident": "ch0_HWPartId",
+        "Name": "Hardware ID",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 23,
+        "Active": true
+    },
+    {
+        "Ident": "ch0_PowerLimit",
+        "Name": "configured AC power outpur limit",
+        "VariableType": 1,
+        "VariableProfile": "~Intensity.100",
+        "Position": 24,
+        "Active": true
+    },
+    {
+        "Ident": "ch0_LastAlarmCode",
+        "Name": "Last alarm code",
+        "VariableType": 1,
+        "VariableProfile": "",
+        "Position": 25,
+        "Active": true
+    },
+    {
+        "Ident": "ch1_U_DC",
+        "Name": "String 1 DC voltage",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "~Volt",
         "Position": 101,
         "Active": false
     },
     {
-        "Ident": "1_current",
-        "Name": "String 1 Current",
+        "Ident": "ch1_I_DC",
+        "Name": "String 1 DC current",
         "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
+        "VariableProfile": "~Ampere",
         "Position": 102,
         "Active": false
     },
     {
-        "Ident": "1_voltage",
-        "Name": "String 1 Voltage",
+        "Ident": "ch1_P_DC",
+        "Name": "String 1 DC power",
         "VariableType": 2,
-        "VariableProfile": "~Volt.230",
+        "VariableProfile": "~Watt",
         "Position": 103,
         "Active": false
     },
     {
-        "Ident": "1_irradiation",
-        "Name": "String 1 irradiation",
+        "Ident": "ch1_YieldDay",
+        "Name": "String 1 Energy today",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 104,
         "Active": false
     },
     {
-        "Ident": "1_yieldday",
-        "Name": "String 1 Energy today",
+        "Ident": "ch1_YieldTotal",
+        "Name": "String 1 Energy total",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 105,
         "Active": false
     },
     {
-        "Ident": "1_yieldtotal",
-        "Name": "String 1 Energy total",
+        "Ident": "ch1_Irradiation",
+        "Name": "String 1 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Electricity",
+        "VariableProfile": "~Valve.F.Wh",
         "Position": 106,
         "Active": false
     },
     {
-        "Ident": "2_power",
-        "Name": "String 2 Power",
+        "Ident": "ch2_U_DC",
+        "Name": "String 2 DC voltage",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "~Volt",
         "Position": 201,
         "Active": false
     },
     {
-        "Ident": "2_current",
-        "Name": "String 2 Current",
+        "Ident": "ch2_I_DC",
+        "Name": "String 2 DC current",
         "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
+        "VariableProfile": "~Ampere",
         "Position": 202,
         "Active": false
     },
     {
-        "Ident": "2_voltage",
-        "Name": "String 2 Voltage",
+        "Ident": "ch2_P_DC",
+        "Name": "String 2 DC power",
         "VariableType": 2,
-        "VariableProfile": "~Volt.230",
+        "VariableProfile": "~Watt",
         "Position": 203,
         "Active": false
     },
     {
-        "Ident": "2_irradiation",
-        "Name": "String 2 irradiation",
+        "Ident": "ch2_YieldDay",
+        "Name": "String 2 Energy today",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 204,
         "Active": false
     },
     {
-        "Ident": "2_yieldday",
-        "Name": "String 2 Energy today",
+        "Ident": "ch2_YieldTotal",
+        "Name": "String 2 Energy total",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 205,
         "Active": false
     },
     {
-        "Ident": "2_yieldtotal",
-        "Name": "String 2 Energy total",
+        "Ident": "ch2_Irradiation",
+        "Name": "String 2 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Electricity",
+        "VariableProfile": "~Valve.F.Wh",
         "Position": 206,
         "Active": false
     },
     {
-        "Ident": "3_power",
-        "Name": "String 3 Power",
+        "Ident": "ch3_U_DC",
+        "Name": "String 3 DC voltage",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "~Volt",
         "Position": 301,
         "Active": false
     },
     {
-        "Ident": "3_current",
-        "Name": "String 3 Current",
+        "Ident": "ch3_I_DC",
+        "Name": "String 3 DC current",
         "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
+        "VariableProfile": "~Ampere",
         "Position": 302,
         "Active": false
     },
     {
-        "Ident": "3_voltage",
-        "Name": "String 3 Voltage",
+        "Ident": "ch3_P_DC",
+        "Name": "String 3 DC power",
         "VariableType": 2,
-        "VariableProfile": "~Volt.230",
+        "VariableProfile": "~Watt",
         "Position": 303,
         "Active": false
     },
     {
-        "Ident": "3_irradiation",
-        "Name": "String 3 irradiation",
+        "Ident": "ch3_YieldDay",
+        "Name": "String 3 Energy today",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 304,
         "Active": false
     },
     {
-        "Ident": "3_yieldday",
-        "Name": "String 3 Energy today",
+        "Ident": "ch1_YieldTotal",
+        "Name": "String 3 Energy total",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 305,
         "Active": false
     },
     {
-        "Ident": "3_yieldtotal",
-        "Name": "String 3 Energy total",
+        "Ident": "ch3_Irradiation",
+        "Name": "String 3 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Electricity",
+        "VariableProfile": "~Valve.F.Wh",
         "Position": 306,
         "Active": false
     },
+
+
     {
-        "Ident": "4_power",
-        "Name": "String 4 Power",
+        "Ident": "ch4_U_DC",
+        "Name": "String 4 DC voltage",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
+        "VariableProfile": "~Volt",
         "Position": 401,
         "Active": false
     },
     {
-        "Ident": "4_current",
-        "Name": "String 4 Current",
+        "Ident": "ch4_I_DC",
+        "Name": "String 4 DC current",
         "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
+        "VariableProfile": "~Ampere",
         "Position": 402,
         "Active": false
     },
     {
-        "Ident": "4_voltage",
-        "Name": "String 4 Voltage",
+        "Ident": "ch4_P_DC",
+        "Name": "String 4 DC power",
         "VariableType": 2,
-        "VariableProfile": "~Volt.230",
+        "VariableProfile": "~Watt",
         "Position": 403,
         "Active": false
     },
     {
-        "Ident": "4_irradiation",
-        "Name": "String 4 irradiation",
+        "Ident": "ch4_YieldDay",
+        "Name": "String 4 Energy today",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 404,
         "Active": false
     },
     {
-        "Ident": "4_yieldday",
-        "Name": "String 4 Energy today",
+        "Ident": "ch4_YieldTotal",
+        "Name": "String 4 Energy total",
         "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
+        "VariableProfile": "~Electricity.Wh",
         "Position": 405,
         "Active": false
     },
     {
-        "Ident": "4_yieldtotal",
-        "Name": "String 4 Energy total",
+        "Ident": "ch4_Irradiation",
+        "Name": "String 4 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Electricity",
+        "VariableProfile": "~Valve.F.Wh",
         "Position": 406,
-        "Active": false
-    },
-    {
-        "Ident": "5_power",
-        "Name": "String 5 Power",
-        "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
-        "Position": 501,
-        "Active": false
-    },
-    {
-        "Ident": "5_current",
-        "Name": "String 5 Current",
-        "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
-        "Position": 502,
-        "Active": false
-    },
-    {
-        "Ident": "5_voltage",
-        "Name": "String 5 Voltage",
-        "VariableType": 2,
-        "VariableProfile": "~Volt.230",
-        "Position": 503,
-        "Active": false
-    },
-    {
-        "Ident": "5_irradiation",
-        "Name": "String 5 irradiation",
-        "VariableType": 2,
-        "VariableProfile": "~Valve.F",
-        "Position": 504,
-        "Active": false
-    },
-    {
-        "Ident": "5_yieldday",
-        "Name": "String 5 Energy today",
-        "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
-        "Position": 505,
-        "Active": false
-    },
-    {
-        "Ident": "5_yieldtotal",
-        "Name": "String 5 Energy total",
-        "VariableType": 2,
-        "VariableProfile": "~Electricity",
-        "Position": 506,
-        "Active": false
-    },
-    {
-        "Ident": "6_power",
-        "Name": "String 6 Power",
-        "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
-        "Position": 601,
-        "Active": false
-    },
-    {
-        "Ident": "6_current",
-        "Name": "String 6 Current",
-        "VariableType": 2,
-        "VariableProfile": "~Ampere.16",
-        "Position": 602,
-        "Active": false
-    },
-    {
-        "Ident": "6_voltage",
-        "Name": "String 6 Voltage",
-        "VariableType": 2,
-        "VariableProfile": "~Volt.230",
-        "Position": 603,
-        "Active": false
-    },
-    {
-        "Ident": "6_irradiation",
-        "Name": "String 6 irradiation",
-        "VariableType": 2,
-        "VariableProfile": "~Valve.F",
-        "Position": 604,
-        "Active": false
-    },
-    {
-        "Ident": "6_yieldday",
-        "Name": "String 6 Energy today",
-        "VariableType": 2,
-        "VariableProfile": "HOYMILES.Wh",
-        "Position": 605,
-        "Active": false
-    },
-    {
-        "Ident": "6_yieldtotal",
-        "Name": "String 6 Energy total",
-        "VariableType": 2,
-        "VariableProfile": "~Electricity",
-        "Position": 606,
         "Active": false
     }
 ]

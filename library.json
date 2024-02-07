@@ -1,12 +1,12 @@
 {
     "id": "{809F7CC2-8326-9B5B-D84A-60DA8E47961E}",
-    "name": "AhoyDTU",
-    "author": "Tobias",
+    "name": "IPS-AhoyDTU-Lib",
+    "author": "Tobias Schade",
     "url": "https://github.com/MCD17/IPSymcon_AhoyDTU_Modul",
     "compatibility": {
         "version": "6.0"
     },
-    "version": "0.1",
-    "build": 1,
-    "date": 1
+    "version": "0.9",
+    "build": 99,
+    "date": 0
 }
