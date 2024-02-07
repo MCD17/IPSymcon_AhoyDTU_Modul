@@ -7,7 +7,8 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 		public function Create()
 		{
 			//Never delete this line!
-			parent::Create();				
+			parent::Create();
+			$this->RegisterPropertyString('PathToConfigurationFile', __DIR__ . "/../libs/variables_microinverter.json");					
 		}
 
 		public function Destroy()
@@ -20,8 +21,5 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 		{
 			//Never delete this line!
 			parent::ApplyChanges();
-
-			//Create variables from configuration file
-			$this->CreateVariablesFromConfigurationFile(__DIR__ . "/../libs/variables_microinverter.json");
 		}
 	}

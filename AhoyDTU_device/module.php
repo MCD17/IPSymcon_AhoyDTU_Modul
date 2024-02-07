@@ -9,9 +9,7 @@
 
 			$this->RegisterPropertyString('MQTTBaseTopic', 'ahoyDTU/');
             $this->RegisterPropertyString('Variables', '[]');
-
-			$this->RegisterProfile(2, static::PREFIX.".Wh", "Electricity", "", " Wh", 0, 0, 0, 1);
-			$this->RegisterProfile(2, static::PREFIX.".VAr", "Electricity", "", " VAr", 0, 0, 0, 1);			
+			$this->RegisterPropertyString('PathToConfigurationFile', __DIR__ . "/../libs/variables_ahoydtu.json");		
 		}
 
 		public function Destroy()
@@ -37,7 +35,7 @@
 			$this->LogMessage('Filter: '.$filter, KL_MESSAGE);
 
 			//Create variables from configuration file
-			$variables = $this->GetVariablesFromConfigurationFile(__DIR__ . "/../libs/variables_ahoydtu.json");
+			$variables = $this->GetVariablesConfiguration();
 
 			foreach($variables as $variable)
 			{
@@ -87,13 +85,15 @@
 			return json_encode($form);
 		}
 
-		public function GetVariablesFromConfigurationFile($configurationFile)
+		public function GetVariablesConfiguration()
 		{
 			// Get variables configuration
 			$variablesConfiguration = json_decode($this->ReadPropertyString("Variables"), true);
+			$pathToConfigurationFile = $this->ReadPropertyString("PathToConfigurationFile");
+		
 
 			// Get variables list template
-			$variablesList = $this->GetVariablesListFromFile($configurationFile);
+			$variablesList = $this->GetVariablesListFromFile($pathToConfigurationFile);
 
 			// Generate a new Variable List from template
 			foreach ($variablesList as $index => $newVariable)
