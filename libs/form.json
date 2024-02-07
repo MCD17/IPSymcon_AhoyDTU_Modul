@@ -3,12 +3,12 @@
         {
             "type": "ValidationTextBox",
             "name": "MQTTBaseTopic",
-            "caption": "MQTT Topic of inverter in AhoyDTU"
+            "caption": "MQTT base topic"
         },
         {
             "type": "List",
             "name": "Variables",
-            "caption": "Variables",
+            "caption": "Variables - activate those you need as variables in IPS",
             "rowCount": 10,
             "add": false,
             "delete": false,
