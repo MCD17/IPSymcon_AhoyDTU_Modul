@@ -219,7 +219,7 @@
         "Ident": "ch1_Irradiation",
         "Name": "String 1 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F.Wh",
+        "VariableProfile": "~Valve.F",
         "Position": 106,
         "Active": false
     },
@@ -267,7 +267,7 @@
         "Ident": "ch2_Irradiation",
         "Name": "String 2 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F.Wh",
+        "VariableProfile": "~Valve.F",
         "Position": 206,
         "Active": false
     },
@@ -315,7 +315,7 @@
         "Ident": "ch3_Irradiation",
         "Name": "String 3 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F.Wh",
+        "VariableProfile": "~Valve.F",
         "Position": 306,
         "Active": false
     },
@@ -365,7 +365,7 @@
         "Ident": "ch4_Irradiation",
         "Name": "String 4 Irradiation",
         "VariableType": 2,
-        "VariableProfile": "~Valve.F.Wh",
+        "VariableProfile": "~Valve.F",
         "Position": 406,
         "Active": false
     }
