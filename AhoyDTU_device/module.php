@@ -37,7 +37,13 @@
 			$this->LogMessage('Filter: '.$filter, KL_MESSAGE);
 
 			//Create variables from configuration file
-			$variables = $this->CreateVariablesFromConfigurationFile(__DIR__ . "/../libs/variables_ahoydtu.json");
+			$variables = $this->GetVariablesFromConfigurationFile(__DIR__ . "/../libs/variables_ahoydtu.json");
+
+			foreach($variables as $variable)
+			{
+				$variableProfile = $variable["VariableProfile"];
+				$this->MaintainVariable ($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variable["Position"], $variable["Active"] );
+			}
 		}
 
 		public function RequestAction($Ident, $Value) 
@@ -81,32 +87,27 @@
 			return json_encode($form);
 		}
 
-		public function CreateVariablesFromConfigurationFile($configurationFile)
+		public function GetVariablesFromConfigurationFile($configurationFile)
 		{
 			// Get variables configuration
 			$variablesConfiguration = json_decode($this->ReadPropertyString("Variables"), true);
 
 			// Get variables list template
-			$variableList = $this->GetVariablesListFromFile($configurationFile);
+			$variablesList = $this->GetVariablesListFromFile($configurationFile);
 
 			// Generate a new Variable List from template
-			foreach ($variableList as $index => $newVariable)
+			foreach ($variablesList as $index => $newVariable)
 			{
-				$variableList[$index]['Name'] = $this->Translate($newVariable['Name']) ;
+				$variablesList[$index]['Name'] = $this->Translate($newVariable['Name']) ;
 				
 				// If configuration for variable exists, keep Active parameter
 				$variablesIndex = array_search($newVariable['Ident'], array_column( $variablesConfiguration, 'Ident'));
 				if ($variablesIndex !== false)
 				{
-					$variableList[$index]['Active']  = $variablesConfiguration[$variablesIndex]['Active'];
+					$variablesList[$index]['Active']  = $variablesConfiguration[$variablesIndex]['Active'];
 				}
 			}
-
-			foreach( $variableList as $variable)
-			{
-				$variableProfile = $variable["VariableProfile"];
-				$this->MaintainVariable($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variable["Position"], $variable["Active"] );
-			}			
+			return $variablesList;
 		}
 
 		private function MQTTSend(string $Topic, string $Payload)

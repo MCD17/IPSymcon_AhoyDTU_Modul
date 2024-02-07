@@ -29,7 +29,7 @@
 			$filter = '.*(' . preg_quote($baseTopic) . ').*';
 			$this->SetReceiveDataFilter($filter);
 
-			$this->SendDebug('ApplyChanges: setFilter: '.$filter, 0);
+			$this->SendDebug('ApplyChanges: setFilter: ', $filter, 0);
 		}
 
 		public function RequestAction($Ident, $Value) 
