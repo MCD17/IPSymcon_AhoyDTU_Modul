@@ -112,7 +112,7 @@
         "Active": false
     },
     {
-        "Ident": "free_hep",
+        "Ident": "free_heap",
         "Name": "Free heap memory",
         "VariableType": 1,
         "VariableProfile": "",
@@ -122,8 +122,8 @@
     {
         "Ident": "mqtt",
         "Name": "Is mqtt connected",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "VariableType": 3,
+        "VariableProfile": "",
         "Position": 16,
         "Active": false
     },
