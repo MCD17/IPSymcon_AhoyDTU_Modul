@@ -5,7 +5,8 @@
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 1,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "device",
@@ -13,7 +14,8 @@
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 2,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "wifi_rssi",
@@ -21,15 +23,17 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 3,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "status",
         "Name": "Online status",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "VariableType": 1,
+        "VariableProfile": "",
         "Position": 4,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "uptime",
@@ -37,7 +41,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 5,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "sunrise",
@@ -45,7 +50,8 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 6,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "sunset",
@@ -53,7 +59,8 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 7,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "comm_start",
@@ -61,7 +68,8 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 8,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "comm_stop",
@@ -69,7 +77,8 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 9,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "total_P_AC",
@@ -77,7 +86,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt.3680",
         "Position": 10,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "total_YieldDay",
@@ -85,7 +95,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 11,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "total_YieldTotal",
@@ -93,7 +104,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity",
         "Position": 12,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "version",
@@ -101,7 +113,8 @@
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 13,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "dis_night_comm",
@@ -109,7 +122,8 @@
         "VariableType": 0,
         "VariableProfile": "~Switch",
         "Position": 14,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "free_heap",
@@ -117,7 +131,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 15,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "mqtt",
@@ -125,7 +140,8 @@
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 16,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "status",
@@ -133,7 +149,7 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 17,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     }
-
 ]

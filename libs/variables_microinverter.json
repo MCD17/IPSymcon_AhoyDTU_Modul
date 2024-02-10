@@ -5,7 +5,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 1,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "last_success",
@@ -13,7 +14,8 @@
         "VariableType": 1,
         "VariableProfile": "~UnixTimestamp",
         "Position": 2,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ack_pwr_limit",
@@ -21,7 +23,8 @@
         "VariableType": 0,
         "VariableProfile": "~Switch",
         "Position": 3,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_U_AC",
@@ -29,7 +32,8 @@
         "VariableType": 2,
         "VariableProfile": "~Volt.230",
         "Position": 4,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_I_AC",
@@ -37,7 +41,8 @@
         "VariableType": 2,
         "VariableProfile": "~Ampere.16",
         "Position": 5,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_P_AC",
@@ -45,7 +50,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 6,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_Q_AC",
@@ -53,7 +59,8 @@
         "VariableType": 2,
         "VariableProfile": "",
         "Position": 10,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_F_AC",
@@ -61,7 +68,8 @@
         "VariableType": 2,
         "VariableProfile": "~Hertz",
         "Position": 11,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_PF_AC",
@@ -69,7 +77,8 @@
         "VariableType": 2,
         "VariableProfile": "",
         "Position": 12,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_Temp",
@@ -77,7 +86,8 @@
         "VariableType": 2,
         "VariableProfile": "~Temperature",
         "Position": 14,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_EVT",
@@ -85,7 +95,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 15,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_YieldDay",
@@ -93,7 +104,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_YieldTotal",
@@ -101,7 +113,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 17,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_P_DC",
@@ -109,7 +122,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 18,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_Efficiency",
@@ -117,7 +131,8 @@
         "VariableType": 2,
         "VariableProfile": "",
         "Position": 19,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_FWVersion",
@@ -125,7 +140,8 @@
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 20,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_FWBuildYear",
@@ -133,7 +149,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 21,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_FWBuildMonthDay",
@@ -141,7 +158,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 22,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_HWPartId",
@@ -149,7 +167,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 23,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_PowerLimit",
@@ -157,7 +176,8 @@
         "VariableType": 1,
         "VariableProfile": "~Intensity.100",
         "Position": 24,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch0_LastAlarmCode",
@@ -165,7 +185,8 @@
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 25,
-        "Active": true
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_U_DC",
@@ -173,7 +194,8 @@
         "VariableType": 2,
         "VariableProfile": "~Volt",
         "Position": 101,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_I_DC",
@@ -181,7 +203,8 @@
         "VariableType": 2,
         "VariableProfile": "~Ampere",
         "Position": 102,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_P_DC",
@@ -189,7 +212,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 103,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_YieldDay",
@@ -197,7 +221,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 104,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_YieldTotal",
@@ -205,7 +230,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 105,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_Irradiation",
@@ -213,7 +239,8 @@
         "VariableType": 2,
         "VariableProfile": "~Valve.F",
         "Position": 106,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_U_DC",
@@ -221,7 +248,8 @@
         "VariableType": 2,
         "VariableProfile": "~Volt",
         "Position": 201,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_I_DC",
@@ -229,7 +257,8 @@
         "VariableType": 2,
         "VariableProfile": "~Ampere",
         "Position": 202,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_P_DC",
@@ -237,7 +266,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 203,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_YieldDay",
@@ -245,7 +275,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 204,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_YieldTotal",
@@ -253,7 +284,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 205,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch2_Irradiation",
@@ -261,7 +293,8 @@
         "VariableType": 2,
         "VariableProfile": "~Valve.F",
         "Position": 206,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch3_U_DC",
@@ -269,7 +302,8 @@
         "VariableType": 2,
         "VariableProfile": "~Volt",
         "Position": 301,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch3_I_DC",
@@ -277,7 +311,8 @@
         "VariableType": 2,
         "VariableProfile": "~Ampere",
         "Position": 302,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch3_P_DC",
@@ -285,7 +320,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 303,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch3_YieldDay",
@@ -293,7 +329,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 304,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_YieldTotal",
@@ -301,7 +338,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 305,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch3_Irradiation",
@@ -309,7 +347,8 @@
         "VariableType": 2,
         "VariableProfile": "~Valve.F",
         "Position": 306,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
 
 
@@ -319,7 +358,8 @@
         "VariableType": 2,
         "VariableProfile": "~Volt",
         "Position": 401,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch4_I_DC",
@@ -327,7 +367,8 @@
         "VariableType": 2,
         "VariableProfile": "~Ampere",
         "Position": 402,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch4_P_DC",
@@ -335,7 +376,8 @@
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 403,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch4_YieldDay",
@@ -343,7 +385,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 404,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch4_YieldTotal",
@@ -351,7 +394,8 @@
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 405,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     },
     {
         "Ident": "ch4_Irradiation",
@@ -359,6 +403,7 @@
         "VariableType": 2,
         "VariableProfile": "~Valve.F",
         "Position": 406,
-        "Active": false
+        "IsActive": false,
+        "IsSettable": false
     }
 ]

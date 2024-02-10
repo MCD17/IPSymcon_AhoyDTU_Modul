@@ -38,12 +38,17 @@
 			foreach($variables as $variable)
 			{
 				$variableProfile = $variable["VariableProfile"];
-				$this->MaintainVariable ($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variable["Position"], $variable["Active"] );
+				$this->MaintainVariable ($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variable["Position"], $variable["IsActive"] );
+				
+				if ($variable["IsSettable"] === true) {
+					@$this->EnableAction($variable["Ident"]);
+				}
 			}
 		}
 
 		public function RequestAction($Ident, $Value) 
-        {			
+        {
+			$this->SendDebug("Request action", "Change ". $Ident ." to '". $Value. "'", 0);			
 		}
 
 		public function ReceiveData($JSONString)
@@ -102,7 +107,7 @@
 				$variablesIndex = array_search($newVariable['Ident'], array_column( $variablesConfiguration, 'Ident'));
 				if ($variablesIndex !== false)
 				{
-					$variablesList[$index]['Active']  = $variablesConfiguration[$variablesIndex]['Active'];
+					$variablesList[$index]['IsActive']  = $variablesConfiguration[$variablesIndex]['IsActive'];
 				}
 			}
 			return $variablesList;
