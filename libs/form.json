@@ -20,6 +20,12 @@
                 "width": "0px",
                 "visible": false
             }, {
+                "caption": "Topic",
+                "name": "Topic",
+                "save": true,
+                "width": "0px",
+                "visible": false
+            }{
                 "caption": "Position",
                 "name": "Position",
                 "save": false,
@@ -33,7 +39,7 @@
                 "visible": true
             }, {
                 "caption": "Active",
-                "name": "Active",
+                "name": "IsActive",
                 "save": true,
                 "width": "75px",
                 "visible": true,
