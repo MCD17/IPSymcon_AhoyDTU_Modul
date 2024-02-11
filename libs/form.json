@@ -19,13 +19,13 @@
                 "save": true,
                 "width": "0px",
                 "visible": false
-            }, {
+            },{
                 "caption": "Topic",
                 "name": "Topic",
                 "save": true,
                 "width": "0px",
                 "visible": false
-            }{
+            },{
                 "caption": "Position",
                 "name": "Position",
                 "save": false,
@@ -37,7 +37,7 @@
                 "width": "500px",
                 "save": false,
                 "visible": true
-            }, {
+            },{
                 "caption": "Active",
                 "name": "IsActive",
                 "save": true,
