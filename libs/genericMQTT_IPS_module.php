@@ -143,24 +143,33 @@
 
 		protected function RegisterProfile($VarTyp, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits = 0)
 		{
-			if (!IPS_VariableProfileExists($Name)) {
-				IPS_CreateVariableProfile($Name, $VarTyp);
+			if (!IPS_VariableProfileExists($Name)) 
+			{
+				if (!IPS_CreateVariableProfile($Name, $VarTyp)) 
+				{
+					$this->LogMessage('Could not create variable profile for variable: ' .$Name, KL_ERROR);
+					return false;
+				}
 			} else {
 				$profile = IPS_GetVariableProfile($Name);
-				if ($profile['ProfileType'] != $VarTyp) {
-					throw new \Exception('Variable profile type does not match for profile ' . $Name, E_USER_WARNING);
+				if ($profile['ProfileType'] != $VarTyp) 
+				{
+					$this->LogMessage('Variable profile type does not match for profile ' .$Name, KL_ERROR);
+					return false;
 				}
 			}
-	
-			IPS_SetVariableProfileIcon($Name, $Icon);
-			IPS_SetVariableProfileText($Name, $Prefix, $Suffix);
+
+			$wasSuccessful = true;
+			$wasSuccessful &= IPS_SetVariableProfileIcon($Name, $Icon);
+			$wasSuccessful &= IPS_SetVariableProfileText($Name, $Prefix, $Suffix);
 			switch ($VarTyp) {
 				case VARIABLETYPE_FLOAT:
-					IPS_SetVariableProfileDigits($Name, $Digits);
+					$wasSuccessful &= IPS_SetVariableProfileDigits($Name, $Digits);
 					// no break
 				case VARIABLETYPE_INTEGER:
-					IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
+					$wasSuccessful &= IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
 					break;
 			}
+			return $wasSuccessful
 		}
 	}
