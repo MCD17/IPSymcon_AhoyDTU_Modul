@@ -170,6 +170,6 @@
 					$wasSuccessful &= IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
 					break;
 			}
-			return $wasSuccessful
+			return $wasSuccessful;
 		}
 	}
