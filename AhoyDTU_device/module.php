@@ -17,9 +17,9 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 				return;
 			}					
 			$wasSuccessful = true;
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 0, "offline", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 1, "partial", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 2, "online", "", 0);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 0, "offline", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 1, "partial", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 2, "online", "", -1);
 
 			if (!$wasSuccessful)
 			{

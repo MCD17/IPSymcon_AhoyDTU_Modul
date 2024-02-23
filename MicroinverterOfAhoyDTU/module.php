@@ -18,11 +18,11 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 				return;
 			}
 			$wasSuccessful = true;
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 0, "offline", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 1, "available - not producing", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 2, "available & producing", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 3, "available & was producing", "", 0);
-			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 4, "was available", "", 0);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 0, "offline", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 1, "available - not producing", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 2, "available & producing", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 3, "available & was producing", "", -1);
+			$wasSuccessful &= IPS_SetVariableProfileAssociation($profileName, 4, "was available", "", -1);
 
 			if (!$wasSuccessful)
 			{
