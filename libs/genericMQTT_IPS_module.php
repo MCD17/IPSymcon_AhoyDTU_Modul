@@ -170,7 +170,7 @@
 					$this->LogMessage('Was IPS_SetVariableProfileDigits successful? -> ' .$wasSuccessful, KL_DEBUG);
 					// no break
 				case VARIABLETYPE_INTEGER:
-					$wasSuccessful &= IPS_SetVariableProfileDigits($Name, $MinValue, $MaxValue, $StepSize);
+					$wasSuccessful &= IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
 					$this->LogMessage('Was IPS_SetVariableProfileDigits successful? -> ' .$wasSuccessful, KL_DEBUG);
 					break;
 			}
