@@ -12,7 +12,7 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			parent::Create();
 			$this->RegisterPropertyString('PathToConfigurationFile', __DIR__ . "/../libs/variables_microinverter.json");
 						
-			if ($this->RegisterProfile(1, $profileName, "", "", "", 0, 0, 0, 1)) 
+			if ($this->RegisterProfile(1, $profileName, "", "", "", 0, 0, 1, 1)) 
 			{
 				$this->LogMessage('Variable profile for variable "' .$profileName. '" could not registered correctly.', KL_ERROR);
 				return;
