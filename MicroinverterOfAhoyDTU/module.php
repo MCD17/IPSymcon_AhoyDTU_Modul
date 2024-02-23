@@ -3,13 +3,15 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 
 	class MicroinverterAhoyDTU extends genericMQTT_IPS_module
 	{
-		const PREFIX = "AHOY_DTU";
+
 		public function Create()
 		{
+		    $profileName = "AHOY_DTU.inverter.status";	
+
 			//Never delete this line!
 			parent::Create();
 			$this->RegisterPropertyString('PathToConfigurationFile', __DIR__ . "/../libs/variables_microinverter.json");
-			$profileName = 	static::PREFIX.".inverter.status";				
+						
 			if ($this->RegisterProfile(1, $profileName, "", "", "", 0, 0, 0, 1)) 
 			{
 				$this->LogMessage('Variable profile for variable "' .$profileName. '" could not registered correctly.', KL_ERROR);
@@ -26,8 +28,7 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			{
 				$this->LogMessage('Variable profile for variable "' .$profileName. '" could not registered correctly.', KL_ERROR);
 				return;
-			}
-			
+			}			
 		}
 
 		public function Destroy()
