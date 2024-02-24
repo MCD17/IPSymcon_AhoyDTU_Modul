@@ -161,17 +161,13 @@
 
 			$wasSuccessful = true;
 			$wasSuccessful &= IPS_SetVariableProfileIcon($Name, $Icon);
-			$this->LogMessage('Was IPS_SetVariableProfileIcon successful? -> ' .$wasSuccessful, KL_DEBUG);
 			$wasSuccessful &= IPS_SetVariableProfileText($Name, $Prefix, $Suffix);
-			$this->LogMessage('Was IPS_SetVariableProfileText successful? -> ' .$wasSuccessful, KL_DEBUG);
 			switch ($VarTyp) {
 				case VARIABLETYPE_FLOAT:
 					$wasSuccessful &= IPS_SetVariableProfileDigits($Name, $Digits);
-					$this->LogMessage('Was IPS_SetVariableProfileDigits successful? -> ' .$wasSuccessful, KL_DEBUG);
 					// no break
 				case VARIABLETYPE_INTEGER:
 					$wasSuccessful &= IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
-					$this->LogMessage('Was IPS_SetVariableProfileDigits successful? -> ' .$wasSuccessful, KL_DEBUG);
 					break;
 			}
 			return $wasSuccessful;

@@ -147,7 +147,7 @@
         "Ident": "status",
         "Name": "Status",
         "VariableType": 1,
-        "VariableProfile": "",
+        "VariableProfile": "AHOY_DTU.device.status",
         "Position": 17,
         "IsActive": false,
         "IsSettable": false
