@@ -1,9 +1,9 @@
 [
     {
         "Ident": "available",
-        "Name": "availability stats",
+        "Name": "status",
         "VariableType": 1,
-        "VariableProfile": "",
+        "VariableProfile": "AHOY_DTU.inverter.status",
         "Position": 1,
         "IsActive": true,
         "IsSettable": false
@@ -21,14 +21,14 @@
         "Ident": "ack_pwr_limit",
         "Name": "power limit accepted",
         "VariableType": 0,
-        "VariableProfile": "~Switch",
+        "VariableProfile": "",
         "Position": 3,
         "IsActive": false,
         "IsSettable": false
     },
     {
         "Ident": "ch0_U_AC",
-        "Name": "actual AC Voltage",
+        "Name": "AC Voltage",
         "VariableType": 2,
         "VariableProfile": "~Volt.230",
         "Position": 4,
@@ -37,7 +37,7 @@
     },
     {
         "Ident": "ch0_I_AC",
-        "Name": "actual AC Current",
+        "Name": "AC Current",
         "VariableType": 2,
         "VariableProfile": "~Ampere.16",
         "Position": 5,
@@ -46,7 +46,7 @@
     },
     {
         "Ident": "ch0_P_AC",
-        "Name": "actual AC Power",
+        "Name": "AC Power",
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 6,
@@ -55,7 +55,7 @@
     },
     {
         "Ident": "ch0_Q_AC",
-        "Name": "actual AC reactive power in var",
+        "Name": "AC reactive power in var",
         "VariableType": 2,
         "VariableProfile": "",
         "Position": 10,
@@ -64,7 +64,7 @@
     },
     {
         "Ident": "ch0_F_AC",
-        "Name": "actual AC Frequency",
+        "Name": "AC Frequency",
         "VariableType": 2,
         "VariableProfile": "~Hertz",
         "Position": 11,
@@ -73,7 +73,7 @@
     },
     {
         "Ident": "ch0_PF_AC",
-        "Name": "actual AC Power factor",
+        "Name": "AC Power factor",
         "VariableType": 2,
         "VariableProfile": "",
         "Position": 12,
@@ -82,7 +82,7 @@
     },
     {
         "Ident": "ch0_Temp",
-        "Name": "Temperature of inverter",
+        "Name": "temperature of inverter",
         "VariableType": 2,
         "VariableProfile": "~Temperature",
         "Position": 14,
@@ -91,7 +91,7 @@
     },
     {
         "Ident": "ch0_EVT",
-        "Name": "Last Event/Alarm Message Index",
+        "Name": "last event/alarm message index",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 15,
@@ -100,7 +100,7 @@
     },
     {
         "Ident": "ch0_YieldDay",
-        "Name": "Inverter Energy today",
+        "Name": "energy today",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
@@ -109,7 +109,7 @@
     },
     {
         "Ident": "ch0_YieldTotal",
-        "Name": "Inverter Energy total",
+        "Name": "energy total",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 17,
@@ -118,7 +118,7 @@
     },
     {
         "Ident": "ch0_P_DC",
-        "Name": "actual DC power",
+        "Name": "DC power",
         "VariableType": 2,
         "VariableProfile": "~Watt",
         "Position": 18,
@@ -136,7 +136,7 @@
     },
     {
         "Ident": "ch0_FWVersion",
-        "Name": "Firmware version",
+        "Name": "firmware version",
         "VariableType": 3,
         "VariableProfile": "",
         "Position": 20,
@@ -145,7 +145,7 @@
     },
     {
         "Ident": "ch0_FWBuildYear",
-        "Name": "Firmware build year",
+        "Name": "firmware build year",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 21,
@@ -154,7 +154,7 @@
     },
     {
         "Ident": "ch0_FWBuildMonthDay",
-        "Name": "Firmware build day and month",
+        "Name": "firmware build day and month",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 22,
@@ -163,7 +163,7 @@
     },
     {
         "Ident": "ch0_HWPartId",
-        "Name": "Hardware ID",
+        "Name": "hardware ID",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 23,
@@ -172,7 +172,7 @@
     },
     {
         "Ident": "ch0_PowerLimit",
-        "Name": "configured AC power outpur limit",
+        "Name": "configured AC power output limit",
         "VariableType": 1,
         "VariableProfile": "~Intensity.100",
         "Position": 24,
@@ -181,7 +181,7 @@
     },
     {
         "Ident": "ch0_LastAlarmCode",
-        "Name": "Last alarm code",
+        "Name": "last alarm code",
         "VariableType": 1,
         "VariableProfile": "",
         "Position": 25,
