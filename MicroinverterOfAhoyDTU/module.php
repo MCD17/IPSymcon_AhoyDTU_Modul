@@ -43,4 +43,26 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			//Never delete this line!
 			parent::ApplyChanges();
 		}
+
+		public function RequestAction($Ident, $Value) 
+        {
+			parent::RequestAction($Ident, $Value);
+
+			switch($Ident) {
+				case "setRelativePowerLimit":
+					//$this->SetLimitRelative( intval( $Value ) );
+					$this->SetValue($Ident, $Value);
+					break;
+				case "setAbsolutePowerLimit":
+					//$this->SetLimitAbsolute( intval( $Value )  );
+					$this->SetValue($Ident, $Value);
+					break;
+				case "setResetInverter":
+					//$this->SwitchInverter( boolval( $Value )  );
+					$this->SetValue($Ident, $Value);
+					break;
+				default:
+					$this->LogMessage('Unknown variable ident "' .$Ident. '".', KL_ERROR);				
+			}		
+		}
 	}

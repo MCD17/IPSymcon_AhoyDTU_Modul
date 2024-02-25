@@ -111,7 +111,7 @@
         "Ident": "ch0_YieldTotal",
         "Name": "energy total",
         "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
+        "VariableProfile": "~Electricity",
         "Position": 17,
         "IsActive": true,
         "IsSettable": false
@@ -189,6 +189,42 @@
         "IsSettable": false
     },
     {
+        "Ident": "inverterID",
+        "Name": "Inverter ID",
+        "VariableType": 2,
+        "VariableProfile": "",
+        "Position": 26,
+        "IsActive": false,
+        "IsSettable": true
+    },
+    {
+        "Ident": "setResetInverter",
+        "Name": "reset Inverter",
+        "VariableType": 0,
+        "VariableProfile": "~Switch",
+        "Position": 27,
+        "IsActive": false,
+        "IsSettable": true
+    },
+    {
+        "Ident": "setRelativePowerLimit",
+        "Name": "relative power limit",
+        "VariableType": 1,
+        "VariableProfile": "~Intensity.100",
+        "Position": 28,
+        "IsActive": false,
+        "IsSettable": true
+    },
+    {
+        "Ident": "setAbsolutePowerLimit",
+        "Name": "absolute power limit",
+        "VariableType": 2,
+        "VariableProfile": "~Watt",
+        "Position": 29,
+        "IsActive": false,
+        "IsSettable": true
+    },
+    {
         "Ident": "ch1_U_DC",
         "Name": "String 1 DC voltage",
         "VariableType": 2,
@@ -228,7 +264,7 @@
         "Ident": "ch1_YieldTotal",
         "Name": "String 1 Energy total",
         "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
+        "VariableProfile": "~Electricity",
         "Position": 105,
         "IsActive": false,
         "IsSettable": false
@@ -282,7 +318,7 @@
         "Ident": "ch2_YieldTotal",
         "Name": "String 2 Energy total",
         "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
+        "VariableProfile": "~Electricity",
         "Position": 205,
         "IsActive": false,
         "IsSettable": false
@@ -336,7 +372,7 @@
         "Ident": "ch1_YieldTotal",
         "Name": "String 3 Energy total",
         "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
+        "VariableProfile": "~Electricity",
         "Position": 305,
         "IsActive": false,
         "IsSettable": false
@@ -392,7 +428,7 @@
         "Ident": "ch4_YieldTotal",
         "Name": "String 4 Energy total",
         "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
+        "VariableProfile": "~Electricity",
         "Position": 405,
         "IsActive": false,
         "IsSettable": false
@@ -402,6 +438,15 @@
         "Name": "String 4 Irradiation",
         "VariableType": 2,
         "VariableProfile": "~Valve.F",
+        "Position": 406,
+        "IsActive": false,
+        "IsSettable": false
+    },
+    {
+        "Ident": "inverterID",
+        "Name": "Inverter ID",
+        "VariableType": 2,
+        "VariableProfile": "",
         "Position": 406,
         "IsActive": false,
         "IsSettable": false
