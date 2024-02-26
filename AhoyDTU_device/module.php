@@ -11,6 +11,7 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			//Never delete this line!
 			parent::Create();
 			$this->RegisterPropertyString('PathToConfigurationFile', __DIR__ . "/../libs/variables_ahoydtu.json");
+			$this->RegisterPropertyString('PathToFormFile', __DIR__ . "/../libs/ahoydtu_device_form.json");
 				
 			if (!$this->RegisterProfile(1, $profileName, "", "", "", 0, 0, 0, 1)) 
 			{

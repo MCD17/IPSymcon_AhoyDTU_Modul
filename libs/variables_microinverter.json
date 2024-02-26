@@ -191,7 +191,7 @@
     {
         "Ident": "inverterID",
         "Name": "Inverter ID",
-        "VariableType": 2,
+        "VariableType": 1,
         "VariableProfile": "",
         "Position": 26,
         "IsActive": false,
@@ -219,7 +219,7 @@
         "Ident": "setAbsolutePowerLimit",
         "Name": "absolute power limit",
         "VariableType": 2,
-        "VariableProfile": "~Watt",
+        "VariableProfile": "~Watt.3680",
         "Position": 29,
         "IsActive": false,
         "IsSettable": true

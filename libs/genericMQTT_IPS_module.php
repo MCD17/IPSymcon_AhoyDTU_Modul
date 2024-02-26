@@ -76,7 +76,8 @@
 
 		public function GetConfigurationForm()
 		{
-			$form = json_decode(file_get_contents(__DIR__ . '/form.json'), true);
+			$pathToFormFile = $this->ReadPropertyString("PathToFormFile");
+			$form = json_decode(file_get_contents($pathToFormFile), true);
 
 			// Set variables configuration
 			$variablesIndex = array_search('Variables', array_column( $form['elements'], 'name'));
