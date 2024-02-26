@@ -79,7 +79,7 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 
 			$topic = $baseTopic . '/ctrl/limit/' . $serial;  
 
-			parent::MQTTSend($topic, strval($limit));
+			$this->MQTTSend($topic, strval($limit));
 		}
 
 		public function SetLimitAbsolute(int $limit)
@@ -90,7 +90,7 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			$topic = $baseTopic . '/ctrl/limit/' . $serial;  
 			$value = strval($limit).'W';
 
-			parent::MQTTSend($topic,  $value);
+			$this->MQTTSend($topic,  $value);
 		}
 
 		public function ResetInverter(bool $status) 
@@ -100,6 +100,6 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 
 			$topic = $baseTopic . '/ctrl/restart/' . $serial;  
 
-			parent::MQTTSend($topic, strval($status));
+			$this->MQTTSend($topic, strval($status));
 		}
 	}

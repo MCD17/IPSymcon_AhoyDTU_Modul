@@ -114,7 +114,7 @@
 			return $variablesList;
 		}
 
-		private function MQTTSend(string $Topic, string $Payload)
+		protected function MQTTSend(string $Topic, string $Payload)
 		{
 			$Server['DataID'] = "{6F642E77-958C-6C58-2101-F142FD7836DA}"; // '{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}' <- MQTT receive GUID
 			$Server['PacketType'] = 3;
