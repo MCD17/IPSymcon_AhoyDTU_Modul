@@ -116,7 +116,7 @@
 
 		protected function MQTTSend(string $Topic, string $Payload)
 		{
-			$Server['DataID'] = "{6F642E77-958C-6C58-2101-F142FD7836DA}"; // '{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}' <- MQTT receive GUID
+			$Server['DataID'] = '{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}';
 			$Server['PacketType'] = 3;
 			$Server['QualityOfService'] = 0;
 			$Server['Retain'] = false;
