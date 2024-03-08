@@ -151,5 +151,14 @@
         "Position": 17,
         "IsActive": false,
         "IsSettable": false
-    }
+    },
+    {
+        "Ident": "total_MaxPower",
+        "Name": "Maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 18,
+        "IsActive": true,
+        "IsSettable": false
+    },
 ]

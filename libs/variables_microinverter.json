@@ -108,6 +108,15 @@
         "IsSettable": false
     },
     {
+        "Ident": "ch0_MaxPower",
+        "Name": "maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 16,
+        "IsActive": true,
+        "IsSettable": false
+    },
+    {
         "Ident": "ch0_YieldTotal",
         "Name": "energy total",
         "VariableType": 2,
@@ -268,6 +277,15 @@
         "Position": 105,
         "IsActive": false,
         "IsSettable": false
+    },    
+    {
+        "Ident": "ch1_MaxPower",
+        "Name": "Maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 16,
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_Irradiation",
@@ -324,6 +342,15 @@
         "IsSettable": false
     },
     {
+        "Ident": "ch2_MaxPower",
+        "Name": "Maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 16,
+        "IsActive": true,
+        "IsSettable": false
+    },
+    {
         "Ident": "ch2_Irradiation",
         "Name": "String 2 Irradiation",
         "VariableType": 2,
@@ -369,12 +396,21 @@
         "IsSettable": false
     },
     {
-        "Ident": "ch1_YieldTotal",
+        "Ident": "ch3_YieldTotal",
         "Name": "String 3 Energy total",
         "VariableType": 2,
         "VariableProfile": "~Electricity",
         "Position": 305,
         "IsActive": false,
+        "IsSettable": false
+    },
+    {
+        "Ident": "ch3_MaxPower",
+        "Name": "Maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 16,
+        "IsActive": true,
         "IsSettable": false
     },
     {
@@ -386,8 +422,6 @@
         "IsActive": false,
         "IsSettable": false
     },
-
-
     {
         "Ident": "ch4_U_DC",
         "Name": "String 4 DC voltage",
@@ -431,6 +465,15 @@
         "VariableProfile": "~Electricity",
         "Position": 405,
         "IsActive": false,
+        "IsSettable": false
+    },
+    {
+        "Ident": "ch4_MaxPower",
+        "Name": "Maximum power output",
+        "VariableType": 2,
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 16,
+        "IsActive": true,
         "IsSettable": false
     },
     {

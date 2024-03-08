@@ -34,15 +34,16 @@
 
 			//Create variables from configuration file
 			$variables = $this->GetVariablesConfiguration();
-
+			$variablePosition = 0;
 			foreach($variables as $variable)
 			{
 				$variableProfile = $variable["VariableProfile"];
-				$this->MaintainVariable ($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variable["Position"], $variable["IsActive"] );
+				$this->MaintainVariable ($variable["Ident"], $this->translate( $variable["Name"] ), $variable["VariableType"], $variableProfile, $variablePosition, $variable["IsActive"] );
 				
 				if ($variable["IsSettable"] === true) {
 					@$this->EnableAction($variable["Ident"]);
 				}
+				$variablePosition++;
 			}
 		}
 
