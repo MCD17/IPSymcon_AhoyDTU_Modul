@@ -51,55 +51,31 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
         {
 			parent::RequestAction($Ident, $Value);
 
-			switch($Ident) {
-				case "setRelativePowerLimit":
-					$this->SetLimitRelative( intval($Value));
-					$this->SetValue($Ident, $Value);
-					break;
-				case "setAbsolutePowerLimit":
-					$this->SetLimitAbsolute( intval($Value));
-					$this->SetValue($Ident, $Value);
-					break;
-				case "setResetInverter":
-					$this->ResetInverter( boolval($Value));
-					$this->SetValue($Ident, $Value);
-					break;
-				case "inverterID":
-					//$this->SwitchInverter( boolval( $Value )  );
-					$this->SetValue($Ident, $Value);
-					break;
-					$this->LogMessage('Unknown variable ident "' .$Ident. '".', KL_ERROR);				
-			}		
+			//switch($Ident) {
+			//	default:
+			//		$this->LogMessage('Unknown variable ident "' .$Ident. '".', KL_ERROR);				
+			//}		
 		}
 
-		public function SetLimitRelative(int $limit)
+		public function SetLimitRelative(string $inverterSerial, int $limit)
 		{
 			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
-			$serial = $this->ReadPropertyString('InverterSerial');
-
-			$topic = $baseTopic . '/ctrl/limit/' . $serial;  
-
+			$topic = $baseTopic . '/ctrl/limit/' . $inverterSerial;
 			$this->MQTTSend($topic, strval($limit));
 		}
 
-		public function SetLimitAbsolute(int $limit)
+		public function SetLimitAbsolute(string $inverterSerial, int $limit)
 		{
 			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
-			$serial = $this->ReadPropertyString('InverterSerial');
-
-			$topic = $baseTopic . '/ctrl/limit/' . $serial;  
+			$topic = $baseTopic . '/ctrl/limit/' . $inverterSerial;  
 			$value = strval($limit).'W';
-
 			$this->MQTTSend($topic,  $value);
 		}
 
-		public function ResetInverter(bool $status) 
+		public function ResetInverter(string $inverterSerial) 
 		{
 			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
-			$serial = $this->ReadPropertyString('InverterSerial');
-
-			$topic = $baseTopic . '/ctrl/restart/' . $serial;  
-
-			$this->MQTTSend($topic, strval($status));
+			$topic = $baseTopic . '/ctrl/restart/' . $inverterSerial;
+			$this->MQTTSend($topic, "1");
 		}
 	}

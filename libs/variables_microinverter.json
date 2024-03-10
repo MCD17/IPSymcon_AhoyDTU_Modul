@@ -108,15 +108,6 @@
         "IsSettable": false
     },
     {
-        "Ident": "ch0_MaxPower",
-        "Name": "maximum power output",
-        "VariableType": 2,
-        "VariableProfile": "~Electricity.Wh",
-        "Position": 16,
-        "IsActive": true,
-        "IsSettable": false
-    },
-    {
         "Ident": "ch0_YieldTotal",
         "Name": "energy total",
         "VariableType": 2,
@@ -198,40 +189,13 @@
         "IsSettable": false
     },
     {
-        "Ident": "inverterID",
-        "Name": "Inverter ID",
-        "VariableType": 1,
-        "VariableProfile": "",
-        "Position": 26,
-        "IsActive": false,
-        "IsSettable": true
-    },
-    {
-        "Ident": "setResetInverter",
-        "Name": "reset Inverter",
-        "VariableType": 0,
-        "VariableProfile": "~Switch",
-        "Position": 27,
-        "IsActive": false,
-        "IsSettable": true
-    },
-    {
-        "Ident": "setRelativePowerLimit",
-        "Name": "relative power limit",
-        "VariableType": 1,
-        "VariableProfile": "~Intensity.100",
-        "Position": 28,
-        "IsActive": false,
-        "IsSettable": true
-    },
-    {
-        "Ident": "setAbsolutePowerLimit",
-        "Name": "absolute power limit",
+        "Ident": "ch0_MaxPower",
+        "Name": "maximum power output",
         "VariableType": 2,
-        "VariableProfile": "~Watt.3680",
-        "Position": 29,
-        "IsActive": false,
-        "IsSettable": true
+        "VariableProfile": "~Electricity.Wh",
+        "Position": 26,
+        "IsActive": true,
+        "IsSettable": false
     },
     {
         "Ident": "ch1_U_DC",
@@ -280,7 +244,7 @@
     },    
     {
         "Ident": "ch1_MaxPower",
-        "Name": "Maximum power output",
+        "Name": "String 1 maximum power output",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
@@ -343,7 +307,7 @@
     },
     {
         "Ident": "ch2_MaxPower",
-        "Name": "Maximum power output",
+        "Name": "String 2 maximum power output",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
@@ -406,7 +370,7 @@
     },
     {
         "Ident": "ch3_MaxPower",
-        "Name": "Maximum power output",
+        "Name": "String 3 maximum power output",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
@@ -469,7 +433,7 @@
     },
     {
         "Ident": "ch4_MaxPower",
-        "Name": "Maximum power output",
+        "Name": "String 4 maximum power output",
         "VariableType": 2,
         "VariableProfile": "~Electricity.Wh",
         "Position": 16,
