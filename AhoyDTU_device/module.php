@@ -41,4 +41,26 @@ require_once(__DIR__ . "/../libs/genericMQTT_IPS_module.php");
 			//Never delete this line!
 			parent::ApplyChanges();
 		}
+
+		public function SetLimitRelative(string $inverterSerial, int $limit)
+		{
+			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
+			$topic = $baseTopic . '/ctrl/limit/' . $inverterSerial;
+			$this->MQTTSend($topic, strval($limit));
+		}
+
+		public function SetLimitAbsolute(string $inverterSerial, int $limit)
+		{
+			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
+			$topic = $baseTopic . '/ctrl/limit/' . $inverterSerial;  
+			$value = strval($limit).'W';
+			$this->MQTTSend($topic,  $value);
+		}
+
+		public function ResetInverter(string $inverterSerial) 
+		{
+			$baseTopic = $this->ReadPropertyString('MQTTBaseTopic');
+			$topic = $baseTopic . '/ctrl/restart/' . $inverterSerial;
+			$this->MQTTSend($topic, "1");
+		}
 	}
